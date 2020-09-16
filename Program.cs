@@ -10,7 +10,9 @@ class Program
 
         while (true)
         {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             System.Console.Write("Vad vill du lägga i lådan: ");
+            Console.ResetColor();
             string input = Console.ReadLine();
 
             if (input.ToLower() == "q" || input.ToLower() == "inget")
