@@ -51,6 +51,24 @@ namespace BureauV2
         {
             listOfDrawers[drawerIndex].ListItems();
         }
+        public void BureauMenu()
+        {
+                System.Console.WriteLine("==========================");
+                System.Console.WriteLine("|__________Byrå__________|");
+                System.Console.WriteLine("|                        |");
+                System.Console.WriteLine("|________[L]ägg_I________|");
+                System.Console.WriteLine("|                        |");
+                System.Console.WriteLine("|_______[I]nnehåll_______|");
+                System.Console.WriteLine("|                        |");
+                System.Console.WriteLine("|___[T]a bort ur lådan___|");
+                System.Console.WriteLine("|                        |");
+                System.Console.WriteLine("|________[R]ensa_________|");
+                System.Console.WriteLine("|                        |");
+                System.Console.WriteLine("|_______[A]vsluta________|");
+                System.Console.WriteLine("|                        |");
+                System.Console.WriteLine("|________________________|");
+                System.Console.WriteLine(" |_|                  |_| ");
+        }
 
 
     }
