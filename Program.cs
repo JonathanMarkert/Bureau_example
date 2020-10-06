@@ -22,22 +22,13 @@ namespace BureauV2
             }
 
             Bureau bureau = new Bureau(numberOfDrawers);
+            bool inMenu = true;
 
-            while (true)
+            while (inMenu)
             {
                 int drawerIndex = 0;
                 int itemIndex = 0;
-
-                System.Console.WriteLine("====================");
-                System.Console.WriteLine("|_____Byrolåda_____|");
-                System.Console.WriteLine("|__[L]ägg_I_sak____|");
-                System.Console.WriteLine("|____[I]nnehåll____|");
-                System.Console.WriteLine("|[T]a bort ur lådan|");
-                System.Console.WriteLine("|_____[R]ensa______|");
-                System.Console.WriteLine("|____[A]vsluta_____|");
-                System.Console.WriteLine("|__________________|");
-                System.Console.WriteLine(" |_|            |_| ");
-
+                bureau.PrintBureauMenu();
                 string menuInput = Console.ReadLine().ToUpper();
 
                 switch (menuInput)
@@ -88,7 +79,8 @@ namespace BureauV2
                         Console.Clear();
                         System.Console.WriteLine("Stänger lådan och tänder eld på byrån. Hej då.");
                         Console.ReadLine();
-                        return;
+                        inMenu = false;
+                        break;
 
                     default:
                         Console.Clear();

@@ -51,7 +51,7 @@ namespace BureauV2
         {
             listOfDrawers[drawerIndex].ListItems();
         }
-        public void BureauMenu()
+        public void PrintBureauMenu()
         {
                 System.Console.WriteLine("==========================");
                 System.Console.WriteLine("|__________Byrå__________|");
